@@ -18,4 +18,4 @@ Now, of course you want to be able to find the necessary query. Introducing, the
 
 Once againg, shit like `c = Crate().pack(q)` is accetable and `c` will be of the `Crate` class
 
-See actual code for advanced tips and tricks on rewriting the whole lib yourself.
+See actual code for advanced methods of decapitating oneself.

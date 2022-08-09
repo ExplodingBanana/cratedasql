@@ -1,11 +1,10 @@
-from typing import List
 from query import Query
 
 class Crate():
 	def __init__(self) -> None:
-		self.container:List[Query] = []
+		self.container:list[Query] = []
 
-	def pack(self, query: Query=None, querylist: List[Query]=None, read: bool=False):
+	def pack(self, query: Query=None, querylist: list[Query]=None, read: bool=False):
 		if query:
 			self.container.append(query)
 
@@ -19,7 +18,7 @@ class Crate():
 
 		if not query and not querylist:
 			raise Exception("Nothing to pack")
-			
+
 		return self  # to allow method cascading
 
 	def unpack(self):

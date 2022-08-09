@@ -1,7 +1,3 @@
-from ast import Yield
-import enum
-
-
 class Query():
 	def __init__(self, path: str) -> None:
 		if path[-4:] != ".sql":

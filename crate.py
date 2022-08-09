@@ -6,7 +6,7 @@ class Crate():
 
 	def pack(self, query: Query=None, querylist: list[Query]=None, read: bool=False):
 		if query:
-			self.container.append(query)
+			self.container.append(query.read()) if read else self.container.append(query)
 
 		if querylist:
 			if read:
